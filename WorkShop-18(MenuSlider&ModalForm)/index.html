@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Slider & Modal Form</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/28a3682ef4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <button id="toggle" class="toggle-button"><i class="fas fa-bars fa-2x"></i></button>
+    <h1>Menu Slider & Modal Form</h1>
+    <p>เรียนรู้การสร้างเมนูสไลด์และฟอร์มโมดัล</p>
+    <button class="create-account" id="open">สร้างบัญชี</button>
+    </header>
+    <div class="container">
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni sit necessitatibus debitis aperiam, autem facere in. Eaque nihil, optio perspiciatis reprehenderit esse eligendi qui animi sunt placeat cumque mollitia.</p>
+        <h2>Game Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni sit necessitatibus debitis aperiam, autem facere in. Eaque nihil, optio perspiciatis reprehenderit esse eligendi qui animi sunt placeat cumque mollitia.</p>
+    </div>
+
+    <div class="modal-container" id="modal">
+        <div class="modal">
+
+            <button class="close-btn" id="close">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal-header">
+                <h2>สร้างบัญชีใหม่</h2>
+            </div>
+
+            <div class="modal-content">
+                <p>แบบฟอร์มการสร้างบัญชีใหม่</p>
+                <form action="" class="modal-form">
+                    <div>
+                        <label for="">ชื่อผู้ใช้:</label>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div>
+                        <label for="">อีเมล:</label>
+                        <input type="email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="" >รหัสผ่าน:</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <input type="submit" value="บันทึก" class="submit-btn">
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>

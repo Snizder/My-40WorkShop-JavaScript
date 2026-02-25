@@ -1,0 +1,170 @@
+:root{
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --modal-delay: 0.1s;
+    --accent-color: #007BFF;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background-color);
+    margin: 0;
+}
+nav{
+    background-color: var(--primary-color);
+    border-right: 2px solid var(--accent-color);
+    color: var(--secondary-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%);
+}
+nav .logo{
+    padding: 30px 0;
+    text-align: center;
+}
+nav .logo img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    border-bottom: 2px solid var(--accent-color);
+    padding: 20px;
+}
+nav ul li a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+header{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 130%;
+    position: relative;
+    text-align: center;
+    padding: 40px 15px;
+}
+header h1{
+    margin: 0;
+}
+header p{
+    margin: 30px;
+}
+button, input[type="submit"]{
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.toggle-button{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.create-account{
+    padding: 12px 30px;
+    font-size: 14px;
+}
+.container{
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+}
+body.show-nav{
+    transform: translateX(250px);
+}
+body{
+    transition: transform 0.3s ease;
+}
+.modal-container{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.modal{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+}
+.modal-container.show-modal{
+    display: block;
+}
+.modal{
+    animation: modalOpen;
+    animation-duration: var(--modal-delay);
+}
+.modal-header{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px;
+}
+.modal-header h2{
+    margin: 0;
+}
+.modal-content{
+    padding: 15px;
+}
+.modal-form div{
+    margin: 15px 0;
+}
+.modal-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+.modal-form input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.close-btn{
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-size: 25px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+@keyframes modalOpen{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+        
+    }
+}
