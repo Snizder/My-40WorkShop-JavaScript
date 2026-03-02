@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+.container{
+    background: url('./Image/picture1.png');
+    width: 400px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+i{
+    position: absolute;
+    font-size: 70px;
+    left: 46%;
+    top: 46%;
+    opacity: 0;
+}

@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+i{
+    color: #e6e6e6;
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+h2{
+    margin-top: 30px;
+}
+.active{
+    color: orange;
+}
